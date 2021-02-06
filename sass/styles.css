@@ -1,7 +1,189 @@
+.nav {
+  display: flex;
+  height: 130px;
+  padding: 30px;
+}
+.nav .social {
+  border-right: 1px solid #646464;
+  width: 33.33%;
+  text-align: center;
+}
+.nav .social img {
+  width: 33px;
+  height: 33px;
+  margin: 5% 4%;
+}
+.nav .logo {
+  width: 33.33%;
+  text-align: center;
+}
+.nav .logo img {
+  width: 16%;
+  height: auto;
+  margin-top: 0%;
+}
+.nav .menu {
+  border-left: 1px solid #646464;
+  width: 33.33%;
+  text-align: center;
+}
+.nav .menu ul {
+  margin-top: 5%;
+}
+.nav .menu ul li {
+  list-style-type: none;
+  display: inline;
+  margin: 0 3%;
+}
+.nav .menu ul li:nth-child(1) {
+  border-bottom: 1px solid #000000;
+}
+.nav .menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: Lato;
+  font-weight: 300;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.header1Img {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 1% 3%;
+}
+.header1Img img {
+  width: 32%;
+}
+
+.planningDesign {
+  background-color: #F4F3F2;
+  padding: 0 2% 3%;
+}
+.planningDesign h2 {
+  color: #1D7DA3;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Cormorant Garamond";
+  font-weight: 200;
+  padding-top: 5%;
+}
+.planningDesign .underlineBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.planningDesign .underlineBox div {
+  height: 2px;
+  width: 425px;
+  background-color: #1D7DA3;
+}
+.planningDesign .content {
+  display: flex;
+  justify-content: center;
+  margin: 7% 0;
+}
+.planningDesign .content div {
+  width: 45%;
+}
+.planningDesign .content img {
+  width: 100%;
+  height: auto;
+}
+.planningDesign .content .innerContent {
+  padding-left: 3%;
+  width: 50%;
+}
+.planningDesign .content .innerContent p {
+  width: 100%;
+  font-family: "Cormorant Garamond";
+  color: #646464;
+  font-size: 25px;
+  margin-bottom: 10%;
+}
+.planningDesign .content .innerContent .connectBtn {
+  background-color: #24A781;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 19px;
+  font-family: "Lato";
+  border: 1px solid #646464;
+  padding: 8px 2.5%;
+  border-radius: 6px;
+  height: 100%;
+}
+
+.homeAbout {
+  background-color: #FFFFFF;
+}
+.homeAbout .aboutTitle {
+  padding: 7% 10%;
+}
+.homeAbout .aboutTitle p {
+  font-family: "Cormorant Garamond";
+}
+.homeAbout .aboutTitle p:nth-child(1) {
+  color: #1D7DA3;
+  font-size: 30px;
+  font-family: "Cormorant Garamond";
+}
+.homeAbout .aboutTitle p:nth-child(3) {
+  color: #646464;
+  font-size: 25px;
+}
+.homeAbout .aboutTitle .aboutUnderline {
+  width: 43%;
+  height: 1px;
+  background-color: #1D7DA3;
+  margin: 1% 0 1%;
+}
+.homeAbout .aboutContent {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: 100px, 100px, 100px;
+}
+.homeAbout .aboutContent img {
+  width: 75%;
+  grid-column: 7/span 10;
+  grid-row-start: 1;
+  grid-row-end: span 3;
+}
+.homeAbout .aboutContent .aboutText {
+  font-size: 25px;
+  font-family: "Cormorant Garamond";
+  color: #646464;
+  text-align: center;
+  width: 90%;
+  line-height: 1.5;
+  grid-column: 3/7;
+  grid-row-start: 2;
+}
+.homeAbout .aboutContent .topLine {
+  width: 800px;
+  height: 2px;
+  background-color: #1D7DA3;
+  grid-column: 2/7;
+  grid-row-start: 1;
+}
+.homeAbout .aboutContent .bottomLine {
+  width: 700px;
+  height: 2px;
+  background-color: #1D7DA3;
+  grid-column: 2/7;
+  grid-row-start: 3;
+}
+.homeAbout .aboutContent .verticalLine {
+  width: 2px;
+  height: 590px;
+  background-color: #1D7DA3;
+  grid-column: 2/7;
+  grid-row-start: 1;
+  grid-row-end: span 3;
 }
 
 /*# sourceMappingURL=styles.css.map */

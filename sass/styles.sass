@@ -1,4 +1,124 @@
+@import ./variables.sass
+@import ./mixins.sass
+@import ./nav.sass
+@import ./footer.sass
+
 *
     margin: 0
     padding: 0
     box-sizing: border-box
+
+.header1Img
+    display: flex
+    justify-content: space-around
+    margin: 0 1% 3%
+    img
+        width: 32%
+
+.planningDesign
+    background-color: $secWhite
+    padding: 0 2% 3%
+    h2
+        color: $secBlue
+        font-size: 50px
+        text-align: center
+        font-family: $classFont
+        font-weight: 200
+        padding-top: 5%
+    .underlineBox
+        width: 100%
+        display: flex
+        justify-content: center
+        div
+            height: 2px
+            width: 425px
+            background-color: $secBlue
+    .content
+        display: flex
+        justify-content: center
+        // flex-wrap: wrap
+        margin: 7% 0
+        div
+            width: 45%
+        img
+            width: 100%
+            height: auto
+        .innerContent
+            padding-left: 3%
+            width: 50%
+            p
+                width: 100%
+                font-family: $classFont
+                color: $primeGray
+                font-size: 25px
+                margin-bottom: 10%
+            .connectBtn
+                background-color: $primeGreen
+                color: $primeWhite
+                text-decoration: none
+                font-size: 19px
+                font-family: $modFont
+                border: 1px solid $primeGray
+                padding: 8px 2.5%
+                border-radius: 6px
+                height: 100%
+
+.homeAbout
+    background-color: $primeWhite
+    .aboutTitle
+        padding: 7% 10%
+        p
+            font-family: $classFont
+            &:nth-child(1)
+                color: $secBlue
+                font-size: 30px
+                font-family: $classFont
+            &:nth-child(3)
+                color: $primeGray
+                font-size: 25px
+        .aboutUnderline
+            width: 43%
+            height: 1px
+            background-color: $secBlue
+            margin: 1% 0 1%
+    .aboutContent
+        display: grid
+        grid-template-columns: repeat(10, 1fr)
+        grid-auto-rows: 100px, 100px, 100px
+
+        img
+            width: 75%
+            grid-column: 7 / span 10
+            grid-row-start: 1
+            grid-row-end: span 3
+        .aboutText
+            font-size: 25px
+            font-family: $classFont
+            color: $primeGray
+            text-align: center
+            width: 90%
+            line-height: 1.5
+            grid-column: 3 / 7
+            grid-row-start: 2
+
+        .topLine
+            width: 800px
+            height: 2px
+            background-color: $secBlue
+            grid-column: 2 / 7
+            grid-row-start: 1
+
+        .bottomLine
+            width: 700px
+            height: 2px
+            background-color: $secBlue
+            grid-column: 2 / 7
+            grid-row-start: 3
+
+        .verticalLine
+            width: 2px
+            height: 590px
+            background-color: $secBlue
+            grid-column: 2 / 7
+            grid-row-start: 1
+            grid-row-end: span 3
