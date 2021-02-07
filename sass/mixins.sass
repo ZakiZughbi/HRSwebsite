@@ -1,0 +1,33 @@
+@mixin line($width, $height, $left)
+    width: $width
+    height: $height
+    background-color: $secBlue
+    position: absolute
+    left: $left
+
+@mixin connectBtn($type)
+    background-color: $primeGreen
+    color: $primeWhite
+    text-decoration: none
+    font-family: $modFont
+    border: 1px solid $primeGray
+    border-radius: 6px
+    height: 100%
+    &:hover
+        background: #1F8C6D
+    @if $type == small
+        font-size: 14px
+        padding: 5px 5%
+    @else
+        font-size: 19px
+        padding: 8px 2.5%
+
+@mixin title($size)
+    color: $secBlue
+    font-size: $size
+    font-family: $classFont
+    font-weight: 200
+
+@mixin Acol($width)
+    width: $width
+    margin: 0 6px

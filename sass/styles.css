@@ -4,7 +4,7 @@
   padding: 30px;
 }
 .nav .social {
-  border-right: 1px solid #646464;
+  border-right: 1px solid #868686;
   width: 33.33%;
   text-align: center;
 }
@@ -23,7 +23,7 @@
   margin-top: 0%;
 }
 .nav .menu {
-  border-left: 1px solid #646464;
+  border-left: 1px solid #868686;
   width: 33.33%;
   text-align: center;
 }
@@ -35,15 +35,93 @@
   display: inline;
   margin: 0 3%;
 }
-.nav .menu ul li:nth-child(1) {
-  border-bottom: 1px solid #000000;
-}
 .nav .menu ul li a {
   text-decoration: none;
   color: black;
   font-size: 20px;
   font-family: Lato;
   font-weight: 300;
+}
+
+.footer {
+  display: flex;
+  background: #F4F3F2;
+  padding: 2%;
+}
+.footer .footerLogo {
+  width: 33.33%;
+  border-right: 1px solid #868686;
+}
+.footer .footerLogo img {
+  width: 23%;
+  margin: 4% 38.5%;
+}
+.footer .footerLogo p {
+  color: #104357;
+  font-family: "Cormorant Garamond";
+  font-size: 18px;
+  text-align: center;
+}
+.footer .letsPlan {
+  width: 33.33%;
+}
+.footer .letsPlan h3 {
+  color: #1D7DA3;
+  font-size: 25px;
+  font-family: "Cormorant Garamond";
+  font-weight: 200;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5%;
+}
+.footer .letsPlan p {
+  color: #868686;
+  font-family: "Cormorant Garamond";
+  font-size: 16px;
+  width: 50%;
+  margin: 3% 25% 6%;
+  text-align: center;
+}
+.footer .letsPlan div {
+  display: flex;
+  justify-content: center;
+}
+.footer .letsPlan div a {
+  background-color: #24A781;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: "Lato";
+  border: 1px solid #868686;
+  border-radius: 6px;
+  height: 100%;
+  font-size: 14px;
+  padding: 5px 5%;
+}
+.footer .letsPlan div a:hover {
+  background: #1F8C6D;
+}
+.footer .followUs {
+  width: 33.33%;
+  border-left: 1px solid #868686;
+}
+.footer .followUs h3 {
+  font-family: "Cormorant Garamond";
+  font-size: 25px;
+  color: #646464;
+  text-align: center;
+  margin: 10% 0 6%;
+}
+.footer .followUs .socialBtns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer .followUs .socialBtns a {
+  width: 25px;
+  margin: 0 10px;
+}
+.footer .followUs .socialBtns a img {
+  width: 100%;
 }
 
 * {
@@ -66,12 +144,12 @@
   padding: 0 2% 3%;
 }
 .planningDesign h2 {
+  text-align: center;
+  padding-top: 5%;
   color: #1D7DA3;
   font-size: 50px;
-  text-align: center;
   font-family: "Cormorant Garamond";
   font-weight: 200;
-  padding-top: 5%;
 }
 .planningDesign .underlineBox {
   width: 100%;
@@ -102,7 +180,7 @@
 .planningDesign .content .innerContent p {
   width: 100%;
   font-family: "Cormorant Garamond";
-  color: #646464;
+  color: #868686;
   font-size: 25px;
   margin-bottom: 10%;
 }
@@ -110,80 +188,247 @@
   background-color: #24A781;
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 19px;
   font-family: "Lato";
-  border: 1px solid #646464;
-  padding: 8px 2.5%;
+  border: 1px solid #868686;
   border-radius: 6px;
   height: 100%;
+  font-size: 19px;
+  padding: 8px 2.5%;
+}
+.planningDesign .content .innerContent .connectBtn:hover {
+  background: #1F8C6D;
 }
 
 .homeAbout {
   background-color: #FFFFFF;
+  position: relative;
+  padding: 7% 2%;
 }
 .homeAbout .aboutTitle {
-  padding: 7% 10%;
+  position: absolute;
+  top: 9%;
+  left: 10%;
 }
 .homeAbout .aboutTitle p {
   font-family: "Cormorant Garamond";
 }
 .homeAbout .aboutTitle p:nth-child(1) {
   color: #1D7DA3;
-  font-size: 30px;
+  font-size: 28px;
   font-family: "Cormorant Garamond";
+  font-weight: 200;
 }
 .homeAbout .aboutTitle p:nth-child(3) {
-  color: #646464;
-  font-size: 25px;
+  color: #868686;
+  font-size: 23px;
 }
 .homeAbout .aboutTitle .aboutUnderline {
-  width: 43%;
+  width: 100%;
   height: 1px;
   background-color: #1D7DA3;
   margin: 1% 0 1%;
 }
 .homeAbout .aboutContent {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-auto-rows: 100px, 100px, 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 .homeAbout .aboutContent img {
-  width: 75%;
-  grid-column: 7/span 10;
-  grid-row-start: 1;
-  grid-row-end: span 3;
+  width: 30%;
+  margin-left: 7%;
 }
 .homeAbout .aboutContent .aboutText {
-  font-size: 25px;
+  font-size: 23px;
   font-family: "Cormorant Garamond";
-  color: #646464;
+  color: #868686;
   text-align: center;
-  width: 90%;
+  width: 35%;
   line-height: 1.5;
-  grid-column: 3/7;
-  grid-row-start: 2;
+  padding: 16% 0 0;
 }
 .homeAbout .aboutContent .topLine {
-  width: 800px;
+  width: 54%;
   height: 2px;
   background-color: #1D7DA3;
-  grid-column: 2/7;
-  grid-row-start: 1;
+  position: absolute;
+  left: 2%;
+  top: 27%;
 }
 .homeAbout .aboutContent .bottomLine {
-  width: 700px;
+  width: 52%;
   height: 2px;
   background-color: #1D7DA3;
-  grid-column: 2/7;
-  grid-row-start: 3;
+  position: absolute;
+  left: 4%;
+  bottom: 15%;
 }
 .homeAbout .aboutContent .verticalLine {
   width: 2px;
-  height: 590px;
+  height: 75%;
   background-color: #1D7DA3;
-  grid-column: 2/7;
-  grid-row-start: 1;
-  grid-row-end: span 3;
+  position: absolute;
+  left: 7%;
+  bottom: 2%;
+}
+
+.collage {
+  background-color: #FFFFFF;
+  padding: 3% 0;
+}
+.collage .topLvl {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  justify-content: center;
+}
+.collage .topLvl .A10 {
+  width: 8%;
+  margin: 0 6px;
+}
+.collage .topLvl .A11 {
+  width: 20%;
+  margin: 0 6px;
+}
+.collage .topLvl div {
+  display: flex;
+  flex-flow: column;
+  width: 8%;
+  margin: 0 6px;
+}
+.collage .topLvl div .A12 {
+  width: 100%;
+  margin-bottom: 12px;
+}
+.collage .topLvl div .A13 {
+  width: 100%;
+}
+.collage .topLvl .A14 {
+  width: 16%;
+  margin: 0 6px;
+}
+.collage .topLvl .A15 {
+  width: 10%;
+  margin: 0 6px;
+}
+.collage .topLvl .A16 {
+  width: 14%;
+  margin: 0 6px;
+}
+.collage .midLvl {
+  display: flex;
+  margin: 12px 0;
+}
+.collage .midLvl img {
+  width: 18%;
+  margin: 0 2%;
+}
+.collage .midLvl p {
+  font-family: "Alex Brush";
+  color: #1D7DA3;
+  font-size: 60px;
+  padding: 1% 0%;
+  text-align: center;
+}
+.collage .bottomLvl {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-end;
+  justify-content: center;
+}
+.collage .bottomLvl img {
+  width: 10%;
+}
+.collage .bottomLvl .A8 {
+  width: 17%;
+  margin: 0 6px;
+}
+.collage .bottomLvl .A7 {
+  width: 10%;
+  margin: 0 6px;
+}
+.collage .bottomLvl .A6 {
+  width: 16%;
+  margin: 0 6px;
+}
+.collage .bottomLvl div {
+  display: flex;
+  flex-flow: column;
+  width: 8%;
+  margin: 0 6px;
+}
+.collage .bottomLvl div .A5 {
+  width: 100%;
+  margin-bottom: 12px;
+}
+.collage .bottomLvl div .A4 {
+  width: 100%;
+}
+.collage .bottomLvl .A3 {
+  width: 22%;
+  margin: 0 6px;
+}
+.collage .bottomLvl .A2 {
+  width: 8%;
+  margin: 0 6px;
+}
+
+.coupleSec {
+  background: #FFFFFF;
+  position: relative;
+}
+.coupleSec h2 {
+  color: #1D7DA3;
+  font-size: 38px;
+  font-family: "Cormorant Garamond";
+  font-weight: 200;
+  margin-left: 12%;
+  padding: 5% 0 10px;
+}
+.coupleSec .coupleTopLine {
+  width: 80%;
+  height: 2px;
+  background-color: #1D7DA3;
+  position: absolute;
+  left: 8%;
+}
+.coupleSec .coupleContentContainer {
+  width: 75%;
+  display: flex;
+  padding-bottom: 10%;
+}
+.coupleSec .coupleContentContainer .couple {
+  width: 35%;
+  margin: 4% 0 0 12.5%;
+}
+.coupleSec .coupleContentContainer p {
+  color: #868686;
+  font-size: 25px;
+  font-family: "Cormorant Garamond";
+  text-align: center;
+  width: 39%;
+  margin: 13% 0 0 8%;
+}
+.coupleSec .coupleVerticalLine {
+  width: 2px;
+  height: 85%;
+  background-color: #1D7DA3;
+  position: absolute;
+  left: 75%;
+  top: 5%;
+}
+.coupleSec .close-up {
+  width: 18%;
+  position: absolute;
+  right: 3%;
+  top: 22%;
+}
+
+.header2Img img {
+  width: 100%;
+}
+
+.aboutCollage img {
+  width: 10%;
 }
 
 /*# sourceMappingURL=styles.css.map */
