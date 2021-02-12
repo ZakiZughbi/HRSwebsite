@@ -5,6 +5,7 @@
     position: absolute
     left: $left
 
+
 @mixin connectBtn($type)
     background-color: $primeGreen
     color: $primeWhite
@@ -31,3 +32,7 @@
 @mixin Acol($width)
     width: $width
     margin: 0 6px
+
+@mixin mQ($arg)
+    @media screen and (max-width: $arg)
+        @content

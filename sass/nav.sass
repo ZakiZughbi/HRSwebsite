@@ -7,9 +7,17 @@
         width: 33.33%
         text-align: center
         img
-            width: 33px
-            height: 33px
+            width: 30px
+            height: 30px
             margin: 5% 4%
+            @include mQ(1150px)
+                width: 25px
+                height: 25px
+                margin-top: 8%
+            @include mQ(1000px)
+                width: 22px
+                height: 22px
+                margin-top: 10%
     .logo
         width: 33.33%
         text-align: center
@@ -17,23 +25,57 @@
             width: 16%
             height: auto
             margin-top: 0%
+            @include mQ(1250px)
+                width: 22%
+    .menuBarContainer
+        display: none
     .menu
         border-left: 1px solid $primeGray
         width: 33.33%
         text-align: center
         ul
             margin-top: 5%
-
+            @include mQ(1150px)
+                margin-top: 8%
             li
                 list-style-type: none
                 display: inline
                 margin: 0 3%
-                // &:nth-child(1)
-                //     border-bottom: 1px solid $primeBlack
-
+                @include mQ(1000px)
+                    margin: 0 2%
                 a
                     text-decoration: none
                     color: black
                     font-size: 20px
                     font-family: Lato
                     font-weight: 300
+                    @include mQ(1150px)
+                        font-size: 16px
+
+
+@media screen and (max-width: 880px)
+    .nav
+        position: relative
+        padding: 0
+        height: auto
+        .social
+            display: none
+        .logo
+            width: auto
+            padding: 1% 3%
+            img
+                width: 55px
+        .menuBarContainer
+            display: block
+            width: 38px
+            height: 38px
+            position: absolute
+            top: 0
+            right: 0
+            margin: 3% 2%
+            @include mQ(650px)
+                margin: 4% 2%
+            .menuBar
+                width: 100%
+        .menu
+            display: none
