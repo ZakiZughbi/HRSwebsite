@@ -1,13 +1,22 @@
+// Imported External Sass Files
 @import ./variables.sass
 @import ./mixins.sass
 @import ./nav.sass
 @import ./footer.sass
+@import ./sideNav.sass
 
+//Resent Layout
 *
     margin: 0
     padding: 0
     box-sizing: border-box
 
+
+
+
+
+//Home Page
+//Header Images
 .header1Img
     display: flex
     justify-content: space-around
@@ -24,54 +33,17 @@
                 max-width: 300px
                 flex-grow: 1
 
-.mobileMenu
-    position: fixed
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    background: $primeWhite
-    z-index: 1
-    .bar
-        display: flex
-        justify-content: space-between
-        border-bottom: 1px solid $secBlue
-        margin: 0 2%
-        padding: 3%
-        .mobileLogo
-            width: 12%
-            height: auto
-        .mobileX
-            width: 6%
-            height: 6%
-            margin: 3% 0
-    .mobileLinks
-        ul
-            margin-top: 10%
-            a
-                text-decoration: none
-                li
-                    margin: 5% 0 0
-                    width: 100%
-                    padding: 1% 15%
-                    list-style-type: none
-                    color: $secBlue
-                    font-family: $classFont
-                    font-size: 25px
-                    &:hover
-                        background: $secWhite
-
-
+//Planning & Design Section
 .planningDesign
     background-color: $secWhite
     padding: 0 2% 3%
+    //Title
     h2
         text-align: center
         padding-top: 5%
         @include title(50px)
         @include mQ(745px)
             font-size: 35px
-
     .underlineBox
         width: 100%
         display: flex
@@ -82,7 +54,7 @@
             background-color: $secBlue
             @include mQ(745px)
                 width: 300px
-
+    //Content (Everything Besides Title)
     .content
         display: flex
         justify-content: center
@@ -92,19 +64,21 @@
             width: 45%
             @include mQ(1020px)
                 width: 95%
-
+        //Section Image
         img
             width: 100%
             height: auto
-
+        //Box of Text and Button
         .innerContent
             padding-left: 3%
             width: 50%
-            min-width: 431px
             @include mQ(1020px)
                 text-align: center
                 width: 95%
                 padding: 7% 0 0% 0
+            @include mQ(400px)
+                width: 80%
+            //Text
             p
                 width: 100%
                 font-family: $classFont
@@ -113,45 +87,57 @@
                 margin-bottom: 10%
                 @include mQ(1250px)
                     font-size: 20px
-
+            //Connect Button
             .connectBtn
                 @include connectBtn(reg)
                 @include mQ(1020px)
                     padding: 7px 6%
+
+//About Owner
 .homeAbout
     background-color: $primeWhite
     position: relative
     padding: 7% 2%
     @include mQ(950px)
         padding-top: 10%
+    //Title
     .aboutTitle
         position: absolute
         top: 9%
         left: 10%
+        @include mQ(470px)
+            top: 3%
+            left: 5%
+        //Top of Title (Role)
         p
             font-family: $classFont
             &:nth-child(1)
                 @include title(28px)
                 @include mQ(950px)
                     font-size: 25px
-
+                @include mQ(470px)
+                    font-size: 20px
+            //Bottom of Title (Name of Owner)
             &:nth-child(3)
                 color: $primeGray
                 font-size: 23px
                 @include mQ(950px)
                     font-size: 20px
-
+                @include mQ(470px)
+                    font-size: 15px
         .aboutUnderline
             width: 100%
             height: 1px
             background-color: $secBlue
             margin: 1% 0 1%
 
+    //Text & Image Container
     .aboutContent
         display: flex
         justify-content: center
         position: relative
         flex-wrap: wrap-reverse
+        //Profile Image
         img
             width: 30%
             margin-left: 7%
@@ -164,7 +150,7 @@
                 width: 75%
                 margin: 0 22.5%
                 margin-top: 25%
-
+        //Text
         .aboutText
             font-size: 23px
             font-family: $classFont
@@ -181,23 +167,24 @@
             @include mQ(930px)
                 padding: 10% 0 0
             @include mQ(690px)
-                min-width: 420px
+                width: 70%
 
+        //Text Box
         .topLine
             @include line(54%, 2px, 2%)
             top: 27%
-            @include mQ(930px)
-                display: none
             @include mQ(1180px)
                 width: 56.5%
+            @include mQ(930px)
+                display: none
 
         .bottomLine
             @include line(52%, 2px, 4%)
             bottom: 15%
-            @include mQ(930px)
-                display: none
             @include mQ(1180px)
                 width: 54.5%
+            @include mQ(930px)
+                display: none
 
         .verticalLine
             @include line(2px, 75%, 7%)
@@ -205,11 +192,11 @@
             @include mQ(930px)
                 display: none
 
+//Home Page Collage
 .collage
     background-color: $primeWhite
     padding: 3% 0
-    // @include mQ(900px)
-    //     background: $primeGreen
+    //Top Block
     .topLvl
         display: flex
         align-items: flex-end
@@ -217,9 +204,9 @@
         justify-content: center
         .A10
             @include Acol(8%)
-
         .A11
             @include Acol(20%)
+        //A12 & A13 (Square Stacked Blocks)
         div
             display: flex
             flex-flow: column
@@ -243,14 +230,17 @@
         .A16
             @include Acol(14%)
 
+    //Middle Block
     .midLvl
         display: flex
         margin: 12px 0
+        //Side Images
         img
             width: 18%
             margin: 0 2%
             @include mQ(1000px)
                 display: none
+        //Slogan
         p
             font-family: $cursive
             color: $secBlue
@@ -262,7 +252,7 @@
             @include mQ(1000px)
                 padding: 1% 5%
 
-
+    //Bottom Block
     .bottomLvl
         display: flex
         align-items: flex-start
@@ -281,6 +271,7 @@
                 width: 49.3%
             @include mQ(590px)
                 width: 50%
+        //A5 & A4 (Square Stacked Blocks)
         div
             display: flex
             flex-flow: column
@@ -298,13 +289,17 @@
         .A2
             @include Acol(8%)
 
+//For Phones and Narrow Devices
 @media screen and (max-width: 900px)
+    //Images Not Present
     .A10, .A11, .A15, .A16, .A8, .A7, .A3, .A2
             display: none
 
+//Married Couple Section
 .coupleSec
     background: $primeWhite
     position: relative
+    //Title
     h2
         @include title(38px)
         margin-left: 12%
@@ -313,12 +308,12 @@
             text-align: center
             margin-left: 0
             font-size: 35px
-
     .coupleTopLine
         @include line(80%, 2px, 8%)
         @include mQ(845px)
             left: 10%
 
+    //Content
     .coupleContentContainer
         width: 75%
         display: flex
@@ -326,12 +321,14 @@
         @include mQ(845px)
             display: block
             width: 100%
+        //Couple Flower Image
         .couple
             width: 35%
             margin: 4% 0 0 12.5%
             @include mQ(845px)
                 width: 70%
                 margin: 4% 15% 0
+        //Text
         p
             color: $primeGray
             font-size: 25px
@@ -345,13 +342,14 @@
                 width: 70%
                 margin: 4% 15% 0
 
-
+    //Vertical Line
     .coupleVerticalLine
         @include line(2px, 85%, 75%)
         top: 5%
         @include mQ(845px)
             display: none
 
+    //Couple Close Up Image
     .close-up
         width: 18%
         position: absolute
@@ -365,50 +363,108 @@
 
 
 //About Page
+//Header
 .header2Img
     img
         width: 100%
+        &:nth-child(2)
+            display: none
+            @include mQ(690px)
+                display: block
+        @include mQ(690px)
+            display: none
 
+//Call To Action Section
 .wantToHear
     background-color: $secWhite
     text-align: center
     padding: 3% 13%
     margin-top: -4px
+    @include mQ(690px)
+        padding: 7% 10%
+
+    //Title
     h2
         @include title(30px)
+        @include mQ(920px)
+            font-size: 25px
+        @include mQ(620px)
+            font-size: 23px
+        @include mQ(500px)
+            font-size: 20px
+    //Text
     p
         font-family: $classFont
         font-size: 23px
         color: $primeGray
         margin: 5% 0
         line-height: 37px
+        @include mQ(920px)
+            font-size: 18px
+            margin-bottom: 7%
+        @include mQ(620px)
+            line-height: 30px
+            font-size: 16px
+            margin-bottom: 10%
+        @include mQ(500px)
+            font-size: 15px
+            line-height: 25px
+
+
+    //Button
     a
         @include connectBtn(reg)
+        @include mQ(920px)
+            @include connectBtn(small)
 
+
+//About Owner Section
 .about
     background-color: $primeWhite
     padding: 5% 0 10% 0
     position: relative
+    //Title
     .aboutTitle
         width: 88%
         margin-left: 7%
+        //Role (Top)
         h2
             @include title(28px)
+            @include mQ(910px)
+                font-size: 25px
+            @include mQ(500px)
+                font-size: 20px
+
+        //Name (Bottom)
         p
             color: $primeGray
             font-size: 23px
             font-family: $classFont
             font-weight: 200
+            @include mQ(910px)
+                font-size: 20px
+            @include mQ(500px)
+                display: 15px
+
+        //Line Seperating Role and Name
         .aboutUnderline
             width: 100%
             height: 2px
             background-color: $secBlue
             margin: 7px 0
+            @include mQ(910px)
+                width: 420px
+            @include mQ(500px)
+                width: 100%
+
+
+    //Content
     .aboutContent
         display: flex
         justify-content: flex-start
-        align-items: flex-start
-
+        align-items: flex-end
+        flex-wrap: wrap-reverse
+        //Text
         p
             font-size: 23px
             font-family: $classFont
@@ -416,13 +472,39 @@
             line-height: 37px
             margin: 4% 10.5% 0 7%
             color: $primeGray
-
+            @include mQ(910px)
+                font-size: 19px
+                line-height: 30px
+            @include mQ(500px)
+                font-size: 15px
+                line-height: 25px
+        //Profile Image
         img
             width: 30%
+            @include mQ(910px)
+                width: 260px
+
+    @media screen and (max-width: 690px)
+        .aboutContent
+            justify-content: center
+            p
+                margin: 0
+                text-align: center
+                width: 80%
+            img
+                width: 70%
+                margin: 5% 0
+
+
+    //Vertical Line
     .aboutVerticalLine
         @include line(2px, 85%, 90%)
         top: 5%
+        @include mQ(910px)
+            display: none
 
+
+//About Page Collage
 .aboutCollage
     display: grid
     grid-template-columns: repeat(14, 1fr)
@@ -464,55 +546,126 @@
         grid-column-end: 4
         grid-row-start: 2
 
+@media screen and (max-width: 690px)
+    .aboutCollage
+        display: flex
+        flex-wrap: wrap
+
+        .B1, .B5, .B6
+            display: none
+
+        .B4
+            order: 3
+        .B2
+            order: 2
+        .B3
+            order: 1
 
 
 
-//Services
+
+//Services Page
+//Services Container
+.menuPlate1, .menuPlate2
+    @include mQ(650px)
+        display: none
 .services
     font-family: $modFont
     border-bottom: 1px solid $secBlue
-    h1
-        @include title(40px)
-        text-align: center
-    .underlineBox
-        width: 22%
-        height: 2px
-        background-color: $secBlue
-        margin: 5px 39%
+    //Title
+    .servicesTitle
+        display: flex
+        width: 100%
+        justify-content: center
+        h1
+            @include title(40px)
+            border-bottom: 2px solid $secBlue
+            padding: 1% 0
+            @include mQ(600px)
+                font-size: 30px
+            @include mQ(400px)
+                font-size: 27px
+                margin: 5% 0
 
+    //For Each Service
     .section
         border-bottom: 1px solid $secBlue
         position: relative
         margin: 6%
         padding: 3% 0
+        //Service Header
         .sectionHeader
             display: flex
+            @include mQ(950px)
+                justify-content: center
+                flex-flow: column
+                align-items: center
+
+            //Service Icon
             img
                 width: 8%
+                @include mQ(950px)
+                    width: 70px
+                // @include mQ(500px)
+                //     width: 70px
+            //Name of Service
             h2
                 color: $primeBlue
                 font-size: 28px
                 font-weight: 400
                 margin: 3% 4% 0
+                @include mQ(950px)
+                    font-size: 26px
+                @include mQ(500px)
+                    font-size: 22px
+
+        //Text of Service
         p
             color: $secBlue
             font-size: 22px
             width: 55%
             margin: 7% 0
+            @include mQ(950px)
+                text-align: center
+                width: 100%
+                font-size: 20px
+                @include mQ(500px)
+                    font-size: 17px
+
+        //Complementing Image
         .sectionImg
             width: 25%
             position: absolute
             top: 0
             right: 0
+            @include mQ(950px)
+                display: none
+
+
+    //Exclusive for certain Sections
     .section3
+        p
+            &:nth-child(2)
+                margin-bottom: 2%
+            &:nth-child(3)
+                text-align: left
+                margin: 0
+            &:nth-child(4)
+                margin-top: 2%
         .sectionImg3
             width: 38%
     .section4
         border-bottom: 0
 
-.images
+//Small Services Page Collage
+.servicesImages
     display: flex
     justify-content: space-around
+    flex-wrap: wrap
     padding: 2% 3%
     img
         width: 49%
+        @include mQ(750px)
+            width: 100%
+            &:nth-child(1)
+                margin-bottom: 2%

@@ -1,7 +1,9 @@
+//NavBar
 .nav
     display: flex
     height: 130px
     padding: 30px
+    //Social Media Links (Left Side)
     .social
         border-right: 1px solid $primeGray
         width: 33.33%
@@ -18,6 +20,8 @@
                 width: 22px
                 height: 22px
                 margin-top: 10%
+
+    //Business Logo (Middle)
     .logo
         width: 33.33%
         text-align: center
@@ -27,8 +31,12 @@
             margin-top: 0%
             @include mQ(1250px)
                 width: 22%
+
+    //Menu Burger Bars Not Present
     .menuBarContainer
         display: none
+
+    //Menu (Right Side)
     .menu
         border-left: 1px solid $primeGray
         width: 33.33%
@@ -52,19 +60,27 @@
                     @include mQ(1150px)
                         font-size: 16px
 
-
+//For Phones and Narrow Devices
 @media screen and (max-width: 880px)
     .nav
         position: relative
         padding: 0
-        height: auto
+        height: 65px
+
+        //Social Media Not Present
         .social
             display: none
+
+        //Business Logo (Left)
         .logo
             width: auto
             padding: 1% 3%
+            //for sideNav
+            z-index: 2
             img
                 width: 55px
+
+        //Menu Burger Bar Container
         .menuBarContainer
             display: block
             width: 38px
@@ -75,7 +91,10 @@
             margin: 3% 2%
             @include mQ(650px)
                 margin: 4% 2%
+            //Menu Burger Bar Img
             .menuBar
                 width: 100%
+
+        //Menu Not Present (present in sideNav)
         .menu
             display: none

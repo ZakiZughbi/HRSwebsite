@@ -1,8 +1,11 @@
+//Footer
 .footer
     display: flex
     background: $secWhite
     padding: 2%
     position: relative
+
+    //Business Logo (Left Side)
     .footerLogo
         width: 33.33%
         border-right: 1px solid $primeGray
@@ -11,6 +14,7 @@
             margin: 4% 38.5%
             @include mQ(1100px)
                 width: 95px
+    //Dev's Name (Under Logo)
     .signature
         color: $primeBlue
         font-family: $classFont
@@ -22,6 +26,7 @@
         @include mQ(1100px)
             font-size:  12px
 
+    //Final Call to Action (Middle)
     .letsPlan
         width: 33.33%
         h3
@@ -53,7 +58,7 @@
                     margin-top: 10%
                     padding: 6px 15.5%
 
-
+    //Social Media Links (Right Side)
     .followUs
         width: 33.33%
         border-left: 1px solid $primeGray
@@ -78,23 +83,29 @@
                 @include mQ(800px)
                     width: 20px
 
+//For Phones and Narrow Devices
 @media screen and (max-width: 775px)
     .footer
         background-color: $secWhite
         display: block
         padding: 0
         position: static
+
+        //Business Logo (Top)
         .footerLogo
             width: 24%
             margin: 0 38%
             padding-top: 5%
             border: 0
-
             img
                 width: 100%
                 margin: 0
+
+        //Call to Action Not Present
         .letsPlan
             display: none
+
+        //Social Media Links (Under Logo)
         .followUs
             border-bottom: 1px solid $secBlue
             border-left: 0
@@ -112,6 +123,8 @@
                     margin: 0
                     img
                         width: 100%
+
+        //Dev's Name (Bottom)
         .signature
             text-align: center
             color: $primeBlue

@@ -1,3 +1,5 @@
+//Mixins
+//homeAbout Lines
 @mixin line($width, $height, $left)
     width: $width
     height: $height
@@ -5,7 +7,7 @@
     position: absolute
     left: $left
 
-
+//Connect Button
 @mixin connectBtn($type)
     background-color: $primeGreen
     color: $primeWhite
@@ -15,7 +17,7 @@
     border-radius: 6px
     height: 100%
     &:hover
-        background: #1F8C6D
+        background-color: darken($primeGreen, 1)
     @if $type == small
         font-size: 14px
         padding: 5px 5%
@@ -23,16 +25,19 @@
         font-size: 19px
         padding: 8px 2.5%
 
+//Section Title
 @mixin title($size)
     color: $secBlue
     font-size: $size
     font-family: $classFont
     font-weight: 200
 
+//Home Image Collage
 @mixin Acol($width)
     width: $width
     margin: 0 6px
 
+//Media Queries
 @mixin mQ($arg)
     @media screen and (max-width: $arg)
         @content

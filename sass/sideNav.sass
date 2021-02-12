@@ -1,0 +1,51 @@
+//SideNav
+
+//Not Present (present only for narrow devices)
+.sideNav
+    display: none
+
+//For Phones and Narrow Devices
+@media screen and (max-width: 880px)
+    .sideNav
+        display: block
+        position: fixed
+        top: 0
+        left: 0
+        width: 0
+        height: 100%
+        background: $primeWhite
+        z-index: 1
+        overflow-x: hidden
+        transition: 0.5s
+
+        //Top Bar
+        .sideNavHeader
+            display: flex
+            justify-content: flex-end
+            border-bottom: 1px solid $secBlue
+            margin: 0 2%
+            padding: 22px
+
+            //Close Button ("X")
+            .close
+                width: 25px
+                height: 25px
+                opacity: 0
+                transition: 0.5s
+
+        //Menu
+        .sideMenu
+            ul
+                margin-top: 40px
+                a
+                    text-decoration: none
+                    li
+                        margin: 20px 0 0
+                        width: 100%
+                        padding: 1% 15%
+                        list-style-type: none
+                        color: $secBlue
+                        font-family: $classFont
+                        font-size: 25px
+                        &:hover
+                            background: $secWhite

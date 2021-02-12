@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./sass/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
         <title>Services</title>
     </head>
     <body>
@@ -25,6 +28,11 @@
                     <a href=""><img src="./Assets/Logo.png" alt="HRS Logo"></a>
                 </div>
 
+        <!-- Menu Burger Bars -->
+                <div class="menuBarContainer">
+                    <img class="menuBar" src="./Assets/menuBars.png" alt="Menu Bar">
+                </div>
+
         <!-- Menu -->
                 <div class="menu">
                     <ul>
@@ -34,20 +42,37 @@
                         <li><a href="#">Connect</a></li>
                     </ul>
                 </div>
-
             </div>
 
     <!-- Header Images -->
             <div class="header1Img">
-                <img src="./Assets/S1.jpg" alt="Menu on Plate and Background" class="img1">
-                <img src="./Assets/S2.jpg" alt="Invitation and Perfume" class="img2">
-                <img src="./Assets/S3.jpg" alt="Menu on Plate" class="img2">
+                <img src="./Assets/S1.jpg" alt="Menu on Plate and Background" class="menuPlate1">
+                <img src="./Assets/S2.jpg" alt="Invitation and Perfume" class="perfumeImg">
+                <img src="./Assets/S3.jpg" alt="Menu on Plate" class="menuPlate2">
+            </div>
+        </div>
+
+<!-- SideNav -->
+        <div class="sideNav">
+            <div class="sideNavHeader">
+                <img class="close" src="./Assets/close.png" alt="Close">
+            </div>
+            <div class="sideMenu">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Services</li></a>
+                    <a href="#"><li>Connect</li></a>
+                </ul>
             </div>
         </div>
 
 <!-- Service -->
         <div class="services">
-            <h1>Service Packages</h1>
+            <div class="servicesTitle">
+                <h1>Service Packages</h1>
+            </div>
+            <!-- <h1>Service Packages</h1> -->
             <div class="underlineBox"></div>
 
             <div class="section section1">
@@ -81,7 +106,8 @@
                     <br>
                     You’ve chosen the flowers, tasted the cake and finalized your guest list. When your special day arrives, let us take care of the rest. We will handle every aspect of your wedding day- from managing vendors and venues to smooth out last-minute details.
                     <br>
-                    <br>
+                </p>
+                <p>
                     • Assistance with last-minute tasks up to 4 weeks before “I Do”
                     <br>
                     • Communication via email, phone, text, and video chat during business hours
@@ -107,8 +133,9 @@
                     • We assist making sure that bridal party and family are gathered for photographs
                     <br>
                     • We direct the maid of honor and the best man when it is time to give their speech
-                    <br>
-                    <br>
+
+                </p>
+                <p>
                     Coordinator assistant is required for a wedding guest list of 200 or more at additional rate of $200
                 </p>
                 <img class="sectionImg sectionImg3" src="./Assets/S6.jpg" alt="Holding Flowers">
@@ -138,7 +165,7 @@
         </div>
 
 <!-- Images -->
-        <div class="images">
+        <div class="servicesImages">
             <img src="./Assets/C2.jpg" alt="Gold & White Wedding">
             <img src="./Assets/C1.jpg" alt="Pink & White Wedding">
         </div>
@@ -147,7 +174,6 @@
         <div class="footer">
             <div class="footerLogo">
                 <a href=""><img src="./Assets/Logo.png" alt="HRS Logo"></a>
-                <p>Designed by Zaki Zughbi</p>
             </div>
             <div class="letsPlan">
                 <h3>Let’s Plan Together</h3>
@@ -165,7 +191,8 @@
                     <a href=""><img src="./Assets/facebook.png" alt="facebook" class="facebook"></a>
                 </div>
             </div>
+            <p class="signature">Designed by Zaki Zughbi</p>
         </div>
-
+        <script src="./app.js" charset="utf-8"></script>
     </body>
 </html>
