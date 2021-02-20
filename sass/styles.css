@@ -548,6 +548,7 @@
 .homeAbout .aboutContent img {
   width: 30%;
   margin-left: 7%;
+  height: auto;
 }
 @media screen and (max-width: 760px) {
   .homeAbout .aboutContent img {
@@ -565,7 +566,6 @@
     width: 75%;
     margin: 0 22.5%;
     margin-top: 25%;
-    height: 100%;
   }
 }
 .homeAbout .aboutContent .aboutText {
