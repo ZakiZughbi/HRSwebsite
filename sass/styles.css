@@ -365,6 +365,7 @@
 }
 .header1Img img {
   width: 32%;
+  height: auto;
 }
 @media screen and (max-width: 650px) {
   .header1Img img {
@@ -564,6 +565,7 @@
     width: 75%;
     margin: 0 22.5%;
     margin-top: 25%;
+    height: auto;
   }
 }
 .homeAbout .aboutContent .aboutText {
