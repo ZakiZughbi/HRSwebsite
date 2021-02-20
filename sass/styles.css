@@ -1293,7 +1293,6 @@
 }
 .services .section .sectionImg {
   width: 25%;
-  height: 25%;
   position: absolute;
   top: 0;
   right: 0;
@@ -1315,7 +1314,7 @@
 }
 .services .section3 .sectionImg3 {
   width: 38%;
-  height: 38%;
+  height: auto;
 }
 .services .section4 {
   border-bottom: 0;
