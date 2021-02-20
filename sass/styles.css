@@ -548,12 +548,12 @@
 .homeAbout .aboutContent img {
   width: 30%;
   margin-left: 7%;
-  height: auto;
+  height: 30%;
 }
 @media screen and (max-width: 760px) {
   .homeAbout .aboutContent img {
     width: 33%;
-    height: auto;
+    height: 33%;
   }
 }
 @media screen and (max-width: 850px) {
@@ -566,6 +566,7 @@
     width: 75%;
     margin: 0 22.5%;
     margin-top: 25%;
+    height: 75%;
   }
 }
 .homeAbout .aboutContent .aboutText {
