@@ -429,7 +429,7 @@
 }
 .planningDesign .content img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .planningDesign .content .innerContent {
   padding-left: 3%;
@@ -714,6 +714,7 @@
 .collage .midLvl img {
   width: 18%;
   margin: 0 2%;
+  height: 18%;
 }
 @media screen and (max-width: 1000px) {
   .collage .midLvl img {
@@ -745,6 +746,7 @@
 }
 .collage .bottomLvl img {
   width: 10%;
+  height: 100%;
 }
 .collage .bottomLvl .A8 {
   width: 17%;
@@ -761,10 +763,12 @@
 @media screen and (max-width: 900px) {
   .collage .bottomLvl .A6 {
     width: 49.3%;
+    height: 49.3%;
   }
 }
 @media screen and (max-width: 590px) {
   .collage .bottomLvl .A6 {
+    width: 50%;
     width: 50%;
   }
 }
@@ -1087,6 +1091,7 @@
 }
 .about .aboutContent img {
   width: 30%;
+  height: 30%;
 }
 @media screen and (max-width: 910px) {
   .about .aboutContent img {
@@ -1101,9 +1106,11 @@
     margin: 0;
     text-align: center;
     width: 80%;
+    height: 100%;
   }
   .about .aboutContent img {
     width: 70%;
+    height: 100%;
     margin: 5% 0;
   }
 }
@@ -1131,6 +1138,7 @@
 }
 .aboutCollage .B1 {
   width: 100%;
+  height: 100%;
   grid-column-start: 11;
   grid-column-end: 15;
   grid-row-start: 1;
@@ -1144,24 +1152,28 @@
 }
 .aboutCollage .B3 {
   width: 100%;
+  height: 100%;
   grid-column-start: 4;
   grid-column-end: 8;
   grid-row-start: 2;
 }
 .aboutCollage .B4 {
   width: 100%;
+  height: 100%;
   grid-column-start: 1;
   grid-column-end: 8;
   grid-row-start: 1;
 }
 .aboutCollage .B5 {
   width: 100%;
+  height: 100%;
   grid-column-start: 8;
   grid-column-end: 11;
   grid-row-start: 2;
 }
 .aboutCollage .B6 {
   width: 100%;
+  height: 100%;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
@@ -1237,10 +1249,12 @@
 }
 .services .section .sectionHeader img {
   width: 8%;
+  height: 8%;
 }
 @media screen and (max-width: 950px) {
   .services .section .sectionHeader img {
     width: 70px;
+    height: auto;
   }
 }
 .services .section .sectionHeader h2 {
@@ -1279,6 +1293,7 @@
 }
 .services .section .sectionImg {
   width: 25%;
+  height: 25%;
   position: absolute;
   top: 0;
   right: 0;
@@ -1300,6 +1315,7 @@
 }
 .services .section3 .sectionImg3 {
   width: 38%;
+  height: 38%;
 }
 .services .section4 {
   border-bottom: 0;
@@ -1313,6 +1329,7 @@
 }
 .servicesImages img {
   width: 49%;
+  height: 49%;
 }
 @media screen and (max-width: 750px) {
   .servicesImages img {
