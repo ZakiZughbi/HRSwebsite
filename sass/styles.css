@@ -213,6 +213,7 @@
 @media screen and (max-width: 775px) {
   .footer .letsPlan div a {
     margin-top: 10%;
+    padding: 6px 20px;
   }
 }
 .footer .followUs {
@@ -847,11 +848,13 @@
 }
 .coupleSec .coupleContentContainer .couple {
   width: 35%;
+  height: 35%;
   margin: 4% 0 0 12.5%;
 }
 @media screen and (max-width: 845px) {
   .coupleSec .coupleContentContainer .couple {
     width: 70%;
+    height: 35%;
     margin: 4% 15% 0;
   }
 }
@@ -1137,7 +1140,7 @@
 }
 .aboutCollage .B1 {
   width: 100%;
-  height: 100%;
+  height: auto;
   grid-column-start: 11;
   grid-column-end: 15;
   grid-row-start: 1;
@@ -1145,34 +1148,34 @@
 }
 .aboutCollage .B2 {
   width: 100%;
-  height: 100%;
+  height: auto;
   grid-column-start: 8;
   grid-column-end: 11;
 }
 .aboutCollage .B3 {
   width: 100%;
-  height: 100%;
+  height: auto;
   grid-column-start: 4;
   grid-column-end: 8;
   grid-row-start: 2;
 }
 .aboutCollage .B4 {
   width: 100%;
-  height: 100%;
+  height: auto;
   grid-column-start: 1;
   grid-column-end: 8;
   grid-row-start: 1;
 }
 .aboutCollage .B5 {
   width: 100%;
-  height: 100%;
+  height: auto;
   grid-column-start: 8;
   grid-column-end: 11;
   grid-row-start: 2;
 }
 .aboutCollage .B6 {
   width: 100%;
-  height: 100%;
+  height: auto;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
