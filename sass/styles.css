@@ -213,7 +213,11 @@
 @media screen and (max-width: 775px) {
   .footer .letsPlan div a {
     margin-top: 10%;
-    padding: 0;
+    padding: 6px 15.5%;
+    -webkit-padding-before: 3px;
+    -webkit-padding-after: 3px;
+    -webkit-padding-start: 7.75%;
+    -webkit-padding-end: 7.75%;
   }
 }
 .footer .followUs {
