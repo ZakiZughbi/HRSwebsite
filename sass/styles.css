@@ -1179,19 +1179,21 @@
   .aboutCollage {
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
   }
   .aboutCollage .B1, .aboutCollage .B5, .aboutCollage .B6 {
     display: none;
   }
   .aboutCollage .B4 {
     order: 3;
+    height: 100%;
   }
   .aboutCollage .B2 {
     order: 2;
+    height: 100%;
   }
   .aboutCollage .B3 {
     order: 1;
+    height: 100%;
   }
 }
 @media screen and (max-width: 650px) {
