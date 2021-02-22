@@ -210,17 +210,6 @@
 .footer .letsPlan div a:hover {
   background-color: #23a37e;
 }
-@media screen and (max-width: 775px) {
-  .footer .letsPlan div a {
-    margin-top: 10%;
-    padding: 6px 15.5%;
-    -webkit-padding-before: 3px;
-    -webkit-padding-after: 3px;
-    -webkit-padding-start: 30px;
-    -webkit-padding-end: 30px;
-    background-color: blue;
-  }
-}
 .footer .followUs {
   width: 33.33%;
   border-left: 1px solid #868686;
@@ -1190,6 +1179,7 @@
   .aboutCollage {
     display: flex;
     flex-wrap: wrap;
+    height: auto;
   }
   .aboutCollage .B1, .aboutCollage .B5, .aboutCollage .B6 {
     display: none;
