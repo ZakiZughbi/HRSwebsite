@@ -205,7 +205,7 @@
   border-radius: 6px;
   height: 100%;
   font-size: 14px;
-  padding: 5px 5%;
+  padding: 6px 20px;
 }
 .footer .letsPlan div a:hover {
   background-color: #23a37e;
@@ -216,8 +216,9 @@
     padding: 6px 15.5%;
     -webkit-padding-before: 3px;
     -webkit-padding-after: 3px;
-    -webkit-padding-start: 20%;
-    -webkit-padding-end: 20%;
+    -webkit-padding-start: 30px;
+    -webkit-padding-end: 30px;
+    background-color: blue;
   }
 }
 .footer .followUs {
@@ -1005,7 +1006,7 @@
     border-radius: 6px;
     height: 100%;
     font-size: 14px;
-    padding: 5px 5%;
+    padding: 6px 20px;
   }
   .wantToHear a:hover {
     background-color: #23a37e;
