@@ -1179,7 +1179,7 @@
   .aboutCollage {
     display: flex;
     flex-wrap: wrap;
-    height: auto;
+    height: 100%;
   }
   .aboutCollage .B1, .aboutCollage .B5, .aboutCollage .B6 {
     display: none;
