@@ -1186,7 +1186,7 @@
   .aboutCollage {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 12px;
+    margin: 12px 0;
   }
   .aboutCollage .B1, .aboutCollage .B5, .aboutCollage .B6 {
     display: none;
