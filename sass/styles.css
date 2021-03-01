@@ -1292,6 +1292,23 @@
     font-size: 17px;
   }
 }
+.services .section ul {
+  color: #1D7DA3;
+  font-size: 22px;
+  width: 55%;
+  margin: 7% 0 0 2%;
+}
+@media screen and (max-width: 950px) {
+  .services .section ul {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 950px) and (max-width: 500px) {
+  .services .section ul {
+    font-size: 17px;
+  }
+}
 .services .section .sectionImg {
   width: 25%;
   position: absolute;
