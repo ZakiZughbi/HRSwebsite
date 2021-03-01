@@ -1186,7 +1186,6 @@
   .aboutCollage {
     display: flex;
     flex-wrap: wrap;
-    margin: 12px 0;
   }
   .aboutCollage .B1, .aboutCollage .B5, .aboutCollage .B6 {
     display: none;
@@ -1194,14 +1193,17 @@
   .aboutCollage .B4 {
     order: 3;
     height: 100%;
+    margin: 2px 0;
   }
   .aboutCollage .B2 {
     order: 2;
     height: 100%;
+    margin: 2px 0;
   }
   .aboutCollage .B3 {
     order: 1;
     height: 100%;
+    margin: 2px 0;
   }
 }
 @media screen and (max-width: 650px) {
