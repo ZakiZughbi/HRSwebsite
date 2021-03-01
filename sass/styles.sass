@@ -11,6 +11,9 @@
     padding: 0
     box-sizing: border-box
 
+.container
+    max-width: 1500px
+    margin: 0 auto
 
 
 
@@ -567,6 +570,7 @@
     .aboutCollage
         display: flex
         flex-wrap: wrap
+        gap: 12px
 
         .B1, .B5, .B6
             display: none
@@ -656,6 +660,7 @@
             font-size: 22px
             width: 55%
             margin: 7% 0 0 2%
+            list-style-position: outside
             @include mQ(950px)
                 width: 100%
                 font-size: 20px

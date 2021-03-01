@@ -353,6 +353,11 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 .header1Img {
   display: flex;
   justify-content: space-around;
@@ -1181,6 +1186,7 @@
   .aboutCollage {
     display: flex;
     flex-wrap: wrap;
+    gap: 12px;
   }
   .aboutCollage .B1, .aboutCollage .B5, .aboutCollage .B6 {
     display: none;
@@ -1297,6 +1303,7 @@
   font-size: 22px;
   width: 55%;
   margin: 7% 0 0 2%;
+  list-style-position: outside;
 }
 @media screen and (max-width: 950px) {
   .services .section ul {
