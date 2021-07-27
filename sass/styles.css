@@ -51,6 +51,7 @@
 }
 .nav .menu ul {
   margin-top: 5%;
+  margin-right: -3%;
 }
 @media screen and (max-width: 1150px) {
   .nav .menu ul {
@@ -60,7 +61,7 @@
 .nav .menu ul li {
   list-style-type: none;
   display: inline;
-  margin: 0 3%;
+  margin: 0 2%;
 }
 @media screen and (max-width: 1000px) {
   .nav .menu ul li {
@@ -74,13 +75,13 @@
   font-family: "Lato";
   font-weight: 300;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1300px) {
   .nav .menu ul li a {
     font-size: 16px;
   }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1100px) {
   .nav {
     position: relative;
     padding: 0;
@@ -107,17 +108,17 @@
     margin: 3% 2%;
   }
 }
-@media screen and (max-width: 880px) and (max-width: 650px) {
+@media screen and (max-width: 1100px) and (max-width: 650px) {
   .nav .menuBarContainer {
     margin: 4% 2%;
   }
 }
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1100px) {
   .nav .menuBarContainer .menuBar {
     width: 100%;
   }
 }
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1100px) {
   .nav .menu {
     display: none;
   }
@@ -302,7 +303,7 @@
   display: none;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1100px) {
   .sideNav {
     display: block;
     position: fixed;
@@ -1363,6 +1364,100 @@
   .servicesImages img:nth-child(1) {
     margin-bottom: 2%;
   }
+}
+
+.invisable {
+  display: none;
+}
+
+.galTitle {
+  background-color: #F4F3F2;
+  padding: 3% 0;
+}
+.galTitle h2 {
+  text-align: center;
+  color: #1D7DA3;
+  font-size: 50px;
+  font-family: "Cormorant Garamond";
+  font-weight: 200;
+}
+@media screen and (max-width: 745px) {
+  .galTitle h2 {
+    font-size: 35px;
+  }
+}
+.galTitle .underlineBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.galTitle .underlineBox div {
+  height: 2px;
+  width: 170px;
+  background-color: #1D7DA3;
+}
+@media screen and (max-width: 745px) {
+  .galTitle .underlineBox div {
+    width: 120px;
+  }
+}
+
+.weddingsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-column-gap: 45px;
+  grid-row-gap: 45px;
+  padding: 4% 15% 10%;
+}
+@media screen and (max-width: 1200px) {
+  .weddingsContainer {
+    padding: 4% 10% 10%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .weddingsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 650px) {
+  .weddingsContainer {
+    padding: 4% 15% 10%;
+    grid-template-columns: 1fr;
+  }
+}
+.weddingsContainer .box {
+  width: 100%;
+  box-shadow: 1px 3px 10px #868686;
+  transition: box-shadow 0.5s linear;
+}
+.weddingsContainer .box:hover {
+  box-shadow: 5px 10px 18px #868686;
+}
+.weddingsContainer .box img {
+  width: 100%;
+}
+.weddingsContainer .box img:nth-child(2) {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .weddingsContainer .box img:nth-child(2) {
+    display: block;
+  }
+  .weddingsContainer .box img:nth-child(1) {
+    display: none;
+  }
+}
+.weddingsContainer .box .text {
+  text-align: center;
+  background: #FFFFFF;
+  font-family: "Lato";
+  color: #868686;
+  padding: 5%;
+}
+.weddingsContainer .box .text h2 {
+  font-weight: 300;
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=styles.css.map */
