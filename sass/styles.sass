@@ -774,3 +774,42 @@
             h2
                 font-weight: 300
                 font-size: 25px
+
+//Individual Gallery Sections
+.contentContainer
+    .imgContainer
+        //width: 1
+        padding: 5% 5%
+        img
+            width: 100%
+    .textContainer
+        padding: 0% 5%
+        h1
+            @include title(40px)
+            margin: 0 0 3%
+        p
+            font-family: $classFont
+            font-size: 23px
+            color: $primeGray
+            text-indent: 30px
+
+    .btnContainer
+        width: 100%
+        display: flex
+        justify-content: center
+        margin: 15% 0 7%
+        a
+            text-decoration: none
+            color: #646464
+            font-family:  $modFont
+            font-weight: 300
+            font-size: 20px
+        .btn
+            width: 12%
+            border: 1px solid #646464
+            border-radius: 4px
+            padding: 10px 0
+            background: #F4F3F2
+            text-align: center
+            &:hover
+                background: darken(#F4F3F2, 10%)

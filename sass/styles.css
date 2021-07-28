@@ -1460,4 +1460,51 @@
   font-size: 25px;
 }
 
+.contentContainer .imgContainer {
+  padding: 5% 5%;
+}
+.contentContainer .imgContainer img {
+  width: 100%;
+}
+.contentContainer .textContainer {
+  padding: 0% 5%;
+}
+.contentContainer .textContainer h1 {
+  color: #1D7DA3;
+  font-size: 40px;
+  font-family: "Cormorant Garamond";
+  font-weight: 200;
+  margin: 0 0 3%;
+}
+.contentContainer .textContainer p {
+  font-family: "Cormorant Garamond";
+  font-size: 23px;
+  color: #868686;
+  text-indent: 30px;
+}
+.contentContainer .btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 15% 0 7%;
+}
+.contentContainer .btnContainer a {
+  text-decoration: none;
+  color: #646464;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 20px;
+}
+.contentContainer .btnContainer .btn {
+  width: 12%;
+  border: 1px solid #646464;
+  border-radius: 4px;
+  padding: 10px 0;
+  background: #F4F3F2;
+  text-align: center;
+}
+.contentContainer .btnContainer .btn:hover {
+  background: #dddad6;
+}
+
 /*# sourceMappingURL=styles.css.map */
