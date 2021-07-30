@@ -19,3 +19,13 @@ close.addEventListener('click', ()=>{
     close.style.opacity="0";
     logo.style.position="static";
 });
+
+//Sliding Images
+var counter = 1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+        counter = 1;
+    }
+}, 5000);
