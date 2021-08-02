@@ -798,12 +798,22 @@
                 img
                     width: 100%
                     height: auto
+                    &:nth-child(1)
+                        display: block
+                        @include mQ(700px)
+                            display: none
+                    &:nth-child(2)
+                        display: none
+                        @include mQ(700px)
+                            display: block
             .navigation-manual
                 position: absolute
                 width: 100%
                 display: flex
                 justify-content: center
                 bottom: 50px
+                @include mQ(700px)
+                    display: none
                 .manual-btn
                     padding: 7px
                     border-radius: 10px
@@ -820,6 +830,8 @@
                 display: flex
                 justify-content: center
                 bottom: 50px
+                @include mQ(700px)
+                    display: none
                 div
                     border: 2px solid $primeWhite
                     padding: 5px
@@ -888,6 +900,9 @@
 #radio4:checked ~ .first
     margin-left: -60%
 
+#radio5:checked ~ .first
+    margin-left: -80%
+
 
 #radio1:checked ~ .navigation-auto .auto-btn1
     background: $secBlue
@@ -902,5 +917,9 @@
     border-color: $secBlue
 
 #radio4:checked ~ .navigation-auto .auto-btn4
+    background: $secBlue
+    border-color: $secBlue
+
+#radio5:checked ~ .navigation-auto .auto-btn5
     background: $secBlue
     border-color: $secBlue
