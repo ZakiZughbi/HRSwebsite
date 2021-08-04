@@ -142,6 +142,24 @@
     width: 95px;
   }
 }
+.footer .lovaContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.footer .lovaContainer .signature {
+  color: #104357;
+  font-family: "Cormorant Garamond";
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+@media screen and (max-width: 1100px) {
+  .footer .lovaContainer .signature {
+    font-size: 12px;
+  }
+}
 .footer .letsPlan {
   width: 33.33%;
 }
@@ -198,12 +216,6 @@
 .footer .letsPlan .finalBtnContainer a:hover {
   background-color: #23a37e;
 }
-.footer .letsPlan .lovaContainer {
-  width: 100%;
-}
-.footer .letsPlan .lovaContainer a img {
-  width: 30%;
-}
 .footer .followUs {
   width: 33.33%;
   border-left: 1px solid #868686;
@@ -237,6 +249,9 @@
   .footer .followUs .socialBtns a {
     width: 20px;
   }
+}
+.footer .lovaContainer2 {
+  display: none;
 }
 
 @media screen and (max-width: 775px) {
@@ -281,13 +296,17 @@
   .footer .followUs .socialBtns a img {
     width: 100%;
   }
-  .footer .signature {
+  .footer .lovaContainer2 {
+    display: block;
+    width: 100%;
     text-align: center;
+    padding: 4% 0;
+  }
+  .footer .lovaContainer2 .signature {
     color: #104357;
     font-family: "Cormorant Garamond";
     font-size: 18px;
-    padding: 3% 0;
-    position: static;
+    text-decoration: none;
   }
 }
 .sideNav {
@@ -640,6 +659,80 @@
   .homeAbout .aboutContent .verticalLine {
     display: none;
   }
+}
+
+.testimonialsContainer {
+  padding: 5% 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1150px) {
+  .testimonialsContainer {
+    justify-content: center;
+  }
+}
+.testimonialsContainer .textContainer {
+  width: 60%;
+}
+.testimonialsContainer .textContainer .titleContianer {
+  border-bottom: 2px solid #1D7DA3;
+}
+.testimonialsContainer .textContainer .titleContianer h3 {
+  color: #1D7DA3;
+  font-size: 38px;
+  font-family: "Cormorant Garamond";
+  font-weight: 200;
+  padding: 0% 0 1% 5%;
+}
+.testimonialsContainer .textContainer p {
+  font-family: "Cormorant Garamond";
+  font-size: 23px;
+  color: #868686;
+  padding: 10% 0;
+  text-indent: 20px;
+}
+.testimonialsContainer .textContainer p:nth-child(3) {
+  color: #646464;
+  font-size: 20px;
+  margin-left: 7%;
+  padding: 5% 0;
+  text-indent: 0px;
+}
+.testimonialsContainer .imgContainer {
+  width: 30%;
+  min-width: 360px;
+}
+.testimonialsContainer .imgContainer img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.magizineContainer {
+  width: 100%;
+  background: #F4F3F2;
+  padding: 3% 0 4%;
+}
+.magizineContainer h2 {
+  text-align: center;
+  color: #1D7DA3;
+  font-size: 38px;
+  font-family: "Cormorant Garamond";
+  font-weight: 200;
+  padding: 0 0 3%;
+}
+@media screen and (max-width: 700px) {
+  .magizineContainer h2 {
+    padding: 0 0 7%;
+  }
+}
+.magizineContainer a {
+  display: flex;
+  justify-content: center;
+}
+.magizineContainer a img {
+  width: 23%;
+  min-width: 200px;
 }
 
 .collage {

@@ -198,6 +198,61 @@
             @include mQ(930px)
                 display: none
 
+//Testimonials
+.testimonialsContainer
+    padding: 5% 10%
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    // min-width: 900px
+    @include mQ(1150px)
+        justify-content: center
+    //     flex-wrap: wrap
+    .textContainer
+        width: 60%
+        .titleContianer
+            border-bottom: 2px solid $secBlue
+            h3
+                @include title(38px)
+                padding: 0% 0 1% 5%
+        p
+            font-family: $classFont
+            font-size: 23px
+            color: $primeGray
+            padding: 10% 0
+            text-indent: 20px
+            &:nth-child(3)
+                //font-weight: 800
+                color: #646464
+                font-size: 20px
+                margin-left: 7%
+                padding: 5% 0
+                text-indent: 0px
+    .imgContainer
+        width: 30%
+        min-width: 360px
+        img
+            width: 100%
+            border-radius: 15px
+//As Seen In
+.magizineContainer
+    width: 100%
+    background: $secWhite
+    padding: 3% 0 4%
+    h2
+        text-align: center
+        @include title(38px)
+        padding: 0 0 3%
+        @include mQ(700px)
+            padding: 0 0 7%
+    a
+        display: flex
+        justify-content: center
+        img
+            width: 23%
+            min-width: 200px
+
+
 //Home Page Collage
 .collage
     background-color: $primeWhite
