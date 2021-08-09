@@ -203,37 +203,54 @@
     padding: 5% 10%
     display: flex
     justify-content: space-between
-    flex-wrap: wrap
+    //flex-wrap: wrap
     // min-width: 900px
-    @include mQ(1150px)
+    @include mQ(845px)
         justify-content: center
-    //     flex-wrap: wrap
+        flex-wrap: wrap
     .textContainer
         width: 60%
+        @include mQ(845px)
+            width: 100%
+
         .titleContianer
             border-bottom: 2px solid $secBlue
             h3
                 @include title(38px)
                 padding: 0% 0 1% 5%
+                @include mQ(845px)
+                    text-align: center
+                    font-size: 35px
         p
             font-family: $classFont
             font-size: 23px
             color: $primeGray
             padding: 10% 0
             text-indent: 20px
+            animation: headerFade 5s linear infinite
+            @include mQ(845px)
+                text-align: center
+                font-size: 20px
             &:nth-child(3)
-                //font-weight: 800
                 color: #646464
                 font-size: 20px
                 margin-left: 7%
                 padding: 5% 0
                 text-indent: 0px
+                @include mQ(845px)
+                    padding-bottom: 15%
+
     .imgContainer
         width: 30%
-        min-width: 360px
+        min-width: 300px
+        padding: 0 0 0 50px
+        @include mQ(840px)
+            width: 75%
+            padding: 0
         img
             width: 100%
-            border-radius: 15px
+            animation: headerFade 5s linear infinite
+
 //As Seen In
 .magizineContainer
     width: 100%

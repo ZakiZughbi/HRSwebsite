@@ -1,3 +1,17 @@
+@keyframes headerFade {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .nav {
   display: flex;
   height: 130px;
@@ -665,15 +679,20 @@
   padding: 5% 10%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 845px) {
   .testimonialsContainer {
     justify-content: center;
+    flex-wrap: wrap;
   }
 }
 .testimonialsContainer .textContainer {
   width: 60%;
+}
+@media screen and (max-width: 845px) {
+  .testimonialsContainer .textContainer {
+    width: 100%;
+  }
 }
 .testimonialsContainer .textContainer .titleContianer {
   border-bottom: 2px solid #1D7DA3;
@@ -685,12 +704,25 @@
   font-weight: 200;
   padding: 0% 0 1% 5%;
 }
+@media screen and (max-width: 845px) {
+  .testimonialsContainer .textContainer .titleContianer h3 {
+    text-align: center;
+    font-size: 35px;
+  }
+}
 .testimonialsContainer .textContainer p {
   font-family: "Cormorant Garamond";
   font-size: 23px;
   color: #868686;
   padding: 10% 0;
   text-indent: 20px;
+  animation: headerFade 5s linear infinite;
+}
+@media screen and (max-width: 845px) {
+  .testimonialsContainer .textContainer p {
+    text-align: center;
+    font-size: 20px;
+  }
 }
 .testimonialsContainer .textContainer p:nth-child(3) {
   color: #646464;
@@ -699,13 +731,25 @@
   padding: 5% 0;
   text-indent: 0px;
 }
+@media screen and (max-width: 845px) {
+  .testimonialsContainer .textContainer p:nth-child(3) {
+    padding-bottom: 15%;
+  }
+}
 .testimonialsContainer .imgContainer {
   width: 30%;
-  min-width: 360px;
+  min-width: 300px;
+  padding: 0 0 0 50px;
+}
+@media screen and (max-width: 840px) {
+  .testimonialsContainer .imgContainer {
+    width: 75%;
+    padding: 0;
+  }
 }
 .testimonialsContainer .imgContainer img {
   width: 100%;
-  border-radius: 15px;
+  animation: headerFade 5s linear infinite;
 }
 
 .magizineContainer {
