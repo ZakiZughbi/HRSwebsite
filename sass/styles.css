@@ -770,12 +770,12 @@
     padding: 0 0 7%;
   }
 }
-.magizineContainer a {
-  display: flex;
-  justify-content: center;
+.magizineContainer .btnContainerAsSeen {
   width: 100%;
+  width: 100%;
+  text-align: center;
 }
-.magizineContainer a img {
+.magizineContainer .btnContainerAsSeen a img {
   width: 23%;
   min-width: 200px;
   height: auto;
