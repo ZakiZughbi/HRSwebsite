@@ -716,7 +716,7 @@
   color: #868686;
   padding: 10% 0;
   text-indent: 20px;
-  animation: headerFade 5s linear infinite;
+  animation: headerFade 8s linear infinite;
 }
 @media screen and (max-width: 845px) {
   .testimonialsContainer .textContainer p {
@@ -739,7 +739,7 @@
 .testimonialsContainer .imgContainer {
   width: 30%;
   min-width: 300px;
-  padding: 0 0 0 50px;
+  padding: 7% 0 0 50px;
 }
 @media screen and (max-width: 840px) {
   .testimonialsContainer .imgContainer {
@@ -749,7 +749,7 @@
 }
 .testimonialsContainer .imgContainer img {
   width: 100%;
-  animation: headerFade 5s linear infinite;
+  animation: headerFade 8s linear infinite;
 }
 
 .magizineContainer {
