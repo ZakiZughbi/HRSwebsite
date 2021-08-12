@@ -34,14 +34,14 @@ let testNameList = ['Hanoi & Patxi', 'Narina & Mohammad', 'Vivian & Mike', 'Lill
 let testText = document.getElementById('testText');
 let testName = document.getElementById('testName');
 let testImage = document.getElementById('testImg');
-var testImageSrc = './Assets/testPic0.png';
+var testImageSrc = './Assets/testPic0.jpg';
 
 let i = 0;
 function testLoop(){
     setTimeout (()=> {
         testText.innerHTML=testTextList[i];
         testName.innerHTML=testNameList[i];
-        testImageSrc = './Assets/testPic' + i + '.png';
+        testImageSrc = './Assets/testPic' + i + '.jpg';
         testImage.src = testImageSrc;
         i++;
         if (i == 5){
