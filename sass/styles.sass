@@ -251,30 +251,6 @@
             width: 100%
             animation: headerFade 8s linear infinite
 
-//As Seen In
-.magizineContainer
-    width: 100%
-    background: $secWhite
-    padding: 3% 0 4%
-    h2
-        text-align: center
-        @include title(38px)
-        padding: 0 0 3%
-        @include mQ(700px)
-            padding: 0 0 7%
-    .btnContainerAsSeen
-        width: 100%
-        // display: flex
-        // justify-content: center
-        width: 100%
-        text-align: center
-        a
-            img
-                width: 23%
-                min-width: 200px
-                height: auto
-
-
 //Home Page Collage
 .collage
     background-color: $primeWhite
@@ -595,6 +571,32 @@
         @include mQ(910px)
             display: none
 
+//As Seen In
+.magizineContainer
+    width: 100%
+    background: $secWhite
+    padding: 2% 0
+    display: flex
+    align-items: center
+    justify-content: space-around
+    flex-wrap: wrap
+    h2
+        text-align: center
+        padding: 3% 0
+        @include title(33px)
+        @include mQ(600px)
+            font-size: 25px
+
+    .btnContainerAsSeen
+        display: flex
+        justify-content: center
+        width: 50%
+        text-align: center
+        a
+            img
+                width: 23%
+                min-width: 200px
+                height: auto
 
 //About Page Collage
 .aboutCollage
