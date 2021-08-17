@@ -1002,3 +1002,25 @@
 #radio5:checked ~ .navigation-auto .auto-btn5
     background: $secBlue
     border-color: $secBlue
+
+//Connect
+.connectCTA
+    background-color: $secWhite
+    text-align: center
+    padding: 3% 13%
+    margin-top: -4px
+    @include mQ(690px)
+        padding: 7% 10%
+
+    //Title
+    h2
+        padding-bottom: 5%
+        @include mQ(790px)
+            padding-bottom: 10%
+        @include title(30px)
+        @include mQ(920px)
+            font-size: 25px
+
+    //Button
+    a
+        @include connectBtn(reg)
