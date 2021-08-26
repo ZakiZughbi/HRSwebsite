@@ -1,0 +1,35 @@
+@import ./variables.sass
+@import ./mixins.sass
+
+.gallery
+	display: flex
+	padding: 2px
+	transition: .3s
+	flex-wrap: wrap
+	justify-content: center
+	width: 100%
+	a
+		margin: 7px
+
+		.gallery__thumb
+			position: relative
+
+			img
+				display: block
+				width: 100%
+				transition: .3s
+				&:hover
+					transform: scale(1.1)
+
+
+	&__column
+		display: flex
+		flex-direction: column
+		width: 35%
+		min-width: 300px
+		@include mQ(650px)
+			width: 85%
+
+	&__link
+		margin: 2px
+		overflow: hidden
