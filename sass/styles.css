@@ -4610,5 +4610,9 @@
 .connectCTA a:hover {
   background-color: #23a37e;
 }
+.gallery__link{
+    pointer-events: none;
+    cursor: default;
+}
 
 /*# sourceMappingURL=styles.css.map */
