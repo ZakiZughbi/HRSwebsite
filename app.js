@@ -40,7 +40,7 @@ function testLoop(){
     setTimeout (()=> {
         testText.innerHTML=testTextList[i];
         testName.innerHTML=testNameList[i];
-        testImageSrc = './Assets/testPic' + i + '.jpg';
+        testImageSrc = './Assets/Testimonials/testPic' + i + '.jpg';
         testImage.src = testImageSrc;
         i++;
         if (i == 4){
